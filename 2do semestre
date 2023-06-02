@@ -1,0 +1,276 @@
+/* void main(){
+// instancia 
+var e1 = Estudiante();
+Estudiante e2 = Estudiante();
+e1.nombre = "Juan";
+e1.aNacimiento = 1990;
+print(e1);
+print(e2);
+e2.nombre = "Pedro";
+e2.aNacimiento = 1941;
+
+/* print(e1.nombre);
+print(e1.aNacimiento);
+print(e2.nombre);
+print(e2.aNacimiento); */
+reporte(e1);
+reporte(e2);
+}
+class Estudiante{
+  // atributos 
+  String nombre = "";
+  int? aNacimiento;
+
+}
+
+void reporte(Estudiante e ) {
+  print("Nombre: ${e.nombre}");
+  print("Edad: ${2023 - e.aNacimiento!}");
+} */
+
+//Crear una clase animal que tenga dos propiedades, nombre y sonido //
+/* void main(List<String> args) {
+  animal perro = animal();
+  perro.nombre = "Firulais";
+  perro.sonido = "Guagua";
+  animal gato = animal();
+  gato.nombre = "Garfiel";
+  gato.sonido = "Miau";
+  animal Pato = animal();
+  Pato.nombre = "Donald";
+  Pato.sonido = "Cuac";
+}
+class animal{
+  String nombre = "";
+  String sonido = "";
+
+}
+
+void reporte(animal a ) {
+  print("Nombre: ${a.nombre}");
+  print("Sonido: ${a.sonido}");
+} */
+
+//20 de abril del 2023
+/* 
+import 'animal.dart';
+void main(List<String> args) {
+/*   Animal a1 = new Animal();
+  Animal a2 = new Animal(); */
+
+ /*  print(a1);
+  print(a2); */
+
+  /* a1.name = "Perro";
+  a1.sonido = "Guau";
+  a2.name = "Gato";
+  a2.sonido = "Miau"; */
+
+  Animal a3 = new Animal("Perro", "Guau");
+  print(a3.name);
+  print(a3.sonido);
+} */
+/* 
+import 'Persona.dart';
+
+void main(List<String> args) {
+  Persona a1 = new Persona("Paco", "2004");
+
+
+}
+
+class Persona {
+  String? nombre;
+  int? aNacimiento;
+
+  Persona  */
+
+/* Escriba un programa que tenga una clase Figura 
+que tenda dos propiedades: base, altura 
+y dos metodos que calculen el area y el perimetro 
+de un rectangulo */
+/* 
+import 'Figura.dart';
+void main(List<String> args) {
+  Figura f1 = Figura(10, 20);
+
+  print("Base: ${f1.base}");
+  print("Altura: ${f1.altura}");
+  print("Area: ${f1.area(5, 4)}");
+} */
+// 27 abril 2023
+// Vehiculo
+
+//03 mayo 2023
+
+//Propiedad de instancia 
+/* void main(List<String> args) {
+  Mueble M1 = Mueble();
+ M1.showCounter();
+ Mueble.showCounterStatic();
+ print("-" * 28);
+ Mueble M2 = Mueble();
+ M2.showCounter();
+ Mueble.showCounterStatic();
+}
+class Mueble {
+  int counter = 0;
+  static int counterStatic = 0;
+
+  Mueble(){
+    counter++;
+    counterStatic++;
+  }
+  void showCounter(){
+    print("Propiedad de instancia: $counter");
+  }
+
+  static void showCounterStatic(){
+    print("Propiedad de clase: $counterStatic");
+  }
+} */
+
+// Crear la clase animal con las siguientes propiedades
+// Tipo de animal y cantiad
+// Crear un metodo de instancia que muestre el tipo de animal y cantidad
+// Crear un metodo de clase que muestre la cantidad de tipos de animlaes de la granja 
+// Crear la instancia de la clase animal y mostrar la cantidad de tipos de animlaes de la granja 
+// Cuantos animales hay en la granja?
+
+/* void main(List<String> args) {
+  Animal A1 = Animal("Vaca", 10);
+  A1.showAnimal();
+  Animal.showAnimalStatic();
+  print("-" * 28);
+  Animal A2 = Animal("Cerdo", 20);
+  A2.showAnimal();
+  Animal.showAnimalStatic();
+  List<Animal> animal = [A1, A2];
+  int suma = 0;
+  animales.forEach((element){
+    suma++ element.cantidad;
+  });
+  print("total de animales: $suma");
+
+}
+class Animal{
+  String?  tipoAnimal;
+  int cantidad;
+
+  static int counterStatic = 0;
+  Animal(this.tipoAnimal, this.cantidad) {
+    counterStatic++;
+
+  }
+  void showAnimal(){
+    print("Tipo de animal: $tipodeAnimal");
+    print("Cantidad: $cantidad");
+  }
+
+  static void showAnimalStatic(){
+    print("Cantidad de tipos de animales: $counterStatic");
+  }
+
+} */
+
+//04 de mayo 
+/* import 'animal2.dart';
+import 'pato.dart';
+import 'vaca.dart';
+import 'caballo.dart';
+
+void main() {
+  Pato pato1 = Pato( "pekines", 10, "Curvo");
+  /* pato1.breed = "Pekines";
+  pato1.quantity = 10;
+  pato1.tipo_pico = "Curvo";*/
+  pato1.showProperties(); 
+  print("-" * 20);
+  Animal2 A1 = Animal2("Animal", 100);
+  /* A1.breed = "Animal";
+  A1.quantity = 100; */
+   A1.showProperties();
+  print("-" * 20);
+  Caballo C1 = Caballo("Azteca", 50, "Blanco");
+  /* C1.breed = "Azteca";
+  C1.quantity = 50;
+  C1.color_crin = "Blanca";*/
+  C1.showProperties(); 
+  print("-" * 20);
+  C1.quantity = 40;
+  Vaca V1 = Vaca("Holstein", 30, "Negro");
+ /*  V1.breed = "Holstein";
+  V1.quantity = 30;
+  V1.color_mancahas = "Negro";*/
+  V1.showProperties();
+  print("-" * 20);
+} */
+// 17 Mayo 2023
+
+/* void main(List<String> args) {
+  final vehiculo = Vehiculo('Rojo', 100);
+  vehiculo.showVehiculo();
+  print('Maxima velocidad: ${vehiculo.maxVelocidad()}');
+
+  final Carro carro = Carro('Azul', 200, 'Toyota');
+  carro.showVehiculo();
+  print('Maxima Velocidad: ${vehiculo.maxVelocidad()}');
+
+  final Carro carroTipo = Carro.tipo('Azul', 200, 'Toyota', 'Sedan');
+  carroTipo.showTipo();
+  print('--------');
+  carroTipo.showTipo2();
+  print('Maxima velocidad: ${carroTipo.maxVelocidad()}');
+}
+
+class Vehiculo {
+  String? _color;
+  int? _velocidad;
+
+  Vehiculo(this._color, this._velocidad) {
+    print('Constructor padre vehiculo');
+  }
+
+  set color(String? color) => this._color = color;
+  set velocidad(int? velocidad) => this._velocidad = velocidad;
+
+  String? get color => _color;
+  int? get velocidad => _velocidad;
+
+  int maxVelocidad() => _velocidad! * 2;
+
+  void showVehiculo() {
+    print('Color: $_color');
+    print('Velocidad: $_velocidad');
+  }
+}
+
+class Carro extends Vehiculo {
+  String? _marca;
+  String? _tipo;
+
+  Carro(super._color, super._velocidad, this._marca) {
+    print('Constructor hijo carro');
+  }
+
+  Carro.tipo(super._color, super._velocidad, this._marca, this._tipo) {
+    print('Constructor nombrado tipo hijo carro');
+  }
+
+  @override
+  void showVehiculo() {
+    super.showVehiculo();
+    print('Marca: $_marca');
+  }
+
+  void showTipo() {
+    super.showVehiculo();
+    print('Marca: $_marca');
+    print('Tipo: $_tipo');
+  }
+
+  void showTipo2() {
+    this.showVehiculo();
+    print('Tipo:$_tipo');
+  }
+} */
